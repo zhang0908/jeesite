@@ -26,7 +26,7 @@ public class TaskMngService {
 		
 		User user = userMngDao.getUserByIdDAO(userId);
 		
-		return user.getName();
+		return "asdf";
 		
 	}
 

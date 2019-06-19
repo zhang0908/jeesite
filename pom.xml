@@ -599,8 +599,15 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/UserAgentUtils-1.13.jar</systemPath>
 		</dependency>
+		
+		<dependency>
+		    <groupId>com.github.jsqlparser</groupId>
+		    <artifactId>jsqlparser</artifactId>
+		    <version>1.4</version>
+		</dependency>
 
 		<!-- Kieker -->
+		
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
@@ -611,6 +618,21 @@
 			<groupId>net.kieker-monitoring</groupId>
 			<artifactId>kieker</artifactId>
 			<version>1.13</version>
+		</dependency>
+		
+		<!-- 
+		<dependency>
+		    <groupId>net.kieker-monitoring</groupId>
+		    <artifactId>kieker</artifactId>
+		    <version>1.13</version>
+		    <classifier>aspectj</classifier>
+		</dependency>
+		 -->
+		
+		<dependency>
+		    <groupId>com.github.haifengl</groupId>
+		    <artifactId>smile-core</artifactId>
+		    <version>1.5.2</version>
 		</dependency>
 		
 		<!-- 自定义jar依赖包

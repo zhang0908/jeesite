@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
-		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd" default-lazy-init="true">
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd" 
+		default-lazy-init="true">
 
 	<description>Activiti Configuration</description>
 	
@@ -58,4 +63,20 @@
 	<bean id="contentTypeResolver" class="org.activiti.rest.common.application.DefaultContentTypeResolver" />
 	<!-- Activiti end -->
 	
+	<bean id="aopTestService" class="com.thinkgem.jeesite.aoptest.AopTestService"></bean>
+	<bean id="aopTest" class="com.thinkgem.jeesite.aoptest.AopTest"></bean>
+	
+	<!-- 
+	
+	<bean id="opEMII" class="kieker.monitoring.probe.spring.executions.OperationExecutionMethodInvocationInterceptor">
+	</bean>
+	
+    <aop:config>
+    	<aop:pointcut expression="execution(public * org.activiti..*.*.*(..))" id="p1"/>
+    	<aop:aspect ref="opEMII">
+    	</aop:aspect>
+    </aop:config>
+    
+     -->
+    
 </beans>

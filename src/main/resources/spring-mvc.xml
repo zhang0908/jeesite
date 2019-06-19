@@ -134,7 +134,7 @@
 	</bean>
 	
     <aop:config>
-        <aop:advisor advice-ref="opEMII" pointcut="execution(public * com.thinkgem.jeesite..*..web..*.*(..))"/>
+        <aop:advisor advice-ref="opEMII" pointcut="execution(public * com.thinkgem.jeesite..*.web..*.*(..))"/>
     </aop:config>
 	
 </beans>
